@@ -51,11 +51,26 @@ $router->get(
     ]
 );
 
-// router POST of tasks
 $router->post(
     '/tasks',
     [
         'uses' => 'TaskController@add',
         'as'   => 'task-add'
+    ]
+);
+
+$router->put(
+    '/tasks/{id}',
+    [
+        'uses' => 'TaskController@update',
+        'as'   => 'task-update'
+    ]
+);
+
+$router->patch(
+    '/tasks/{id}',
+    [
+        'uses' => 'TaskController@update',
+        'as'   => 'task-patch'
     ]
 );

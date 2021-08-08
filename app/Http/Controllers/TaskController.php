@@ -43,8 +43,8 @@ class TaskController extends Controller
 
             $newTask ->title = $request->input('title');;
             $newTask ->category_id = $request->input('categoryId');
-            $newTask ->completion = $request->input('completion');
-            $newTask ->status = $request->input('status');
+            $newTask ->completion =0;
+            $newTask ->status =1;
 
             $response = $newTask->save();
             if ($response) {
@@ -100,6 +100,20 @@ class TaskController extends Controller
 
         $response = $oneTask->save();
 
+        if ($response) {
+            return $this->sendEmptyResponse(Response::HTTP_NO_CONTENT);
+        } else {
+            abort(500);
+        }
+    }
+
+    /**
+     * http Methode Delete
+     * URL : /tasks/id
+     */
+    public function delete($id) {
+        $oneTask = Task::findOrFail($id);
+        $response = $oneTask->delete();
         if ($response) {
             return $this->sendEmptyResponse(Response::HTTP_NO_CONTENT);
         } else {

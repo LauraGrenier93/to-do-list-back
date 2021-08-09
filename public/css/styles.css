@@ -1,0 +1,67 @@
+.logo {
+    font-weight: bold;
+    padding: 1rem;
+    background: linear-gradient(300deg, green, transparent);
+    text-transform: uppercase;
+}
+.container {
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+}
+
+.title {
+    margin: 1rem;
+}
+span {
+    font-style: italic;
+}
+table {
+    margin: 1rem auto;
+    border-collapse: separate;
+    border-spacing: 0 0.5rem;
+    width: 70%;
+}
+caption {
+    padding: 10px;
+    caption-side: bottom;
+}
+tr {
+    box-shadow: 0px 5px 5px gray;
+    text-align: left;
+}
+th {
+    padding:0.5rem;
+    background-color: rgb(175, 174, 174);
+    width: 100%;
+}
+td {
+    border-spacing: 0.5rem 0;
+    padding: 0.5rem;
+}
+
+.read, .replace, .update, .delete {
+    width:10%;
+}
+
+.read {
+    background-color: cadetblue;
+}
+
+.create {
+    background-color:rgb(119, 179, 119);
+}
+.replace {
+    background-color: rgb(196, 196, 52);
+}
+.update {
+    background-color: rgb(226, 154, 21);
+}
+.delete {
+    background-color: rgb(250, 119, 119);
+}
+
+.copyright {
+    font-weight: bold;
+    text-align: center;
+}

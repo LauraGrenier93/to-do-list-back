@@ -9,6 +9,6 @@ class MainController extends Controller
      * URL : /
      */
     public function home() {
-        echo 'je suis dans le Maincontroller';
+        echo 'Welcom to this API';
     }
 }

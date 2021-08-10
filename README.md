@@ -35,7 +35,6 @@ the project has been posted on heroku:[ https://my-liste-pro-back.herokuapp.com/
 
 end point are :
 
-- home page:[ https://my-liste-pro-back.herokuapp.com/]
 - all categories: [ https://my-liste-pro-back.herokuapp.com/categories]
 - a category: [ https://my-liste-pro-back.herokuapp.com/categories/1]
 - all task : [ https://my-liste-pro-back.herokuapp.com/tasks] in GET, POST

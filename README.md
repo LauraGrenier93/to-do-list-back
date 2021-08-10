@@ -8,6 +8,8 @@ A CRUD has been made. Each task can be created, read, modified and deleted.
 
 You can associate a category to each task.
 
+A homepage according to the MVC model has been created.
+
 ## stack
 
 PHP with frameworks:
